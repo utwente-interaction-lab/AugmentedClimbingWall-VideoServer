@@ -30,6 +30,7 @@ export class VideoPlayer {
       _this.video.play();
       _this.resizeVideo();
     }, true);
+    this.video.play(); // Autoplay the main video
 
     // secondly video
     this.localStream2 = new MediaStream();
@@ -38,6 +39,7 @@ export class VideoPlayer {
     this.videoThumb.addEventListener('loadedmetadata', function () {
       _this.videoThumb.play();
     }, true);
+    this.videoThumb.play(); // Autoplay the second video
 
     this.videoTrackList = [];
     this.videoTrackIndex = 0;

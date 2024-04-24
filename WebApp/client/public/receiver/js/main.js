@@ -43,6 +43,7 @@ async function setup() {
   showWarningIfNeeded(res.startupMode);
   showCodecSelect();
   showPlayButton();
+  onClickPlayButton();
 }
 
 function showWarningIfNeeded(startupMode) {
@@ -105,6 +106,7 @@ async function onDisconnect(connectionId) {
     codecPreferences.disabled = false;
   }
   showPlayButton();
+  onClickPlayButton();
 }
 
 function setCodecPreferences() {
