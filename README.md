@@ -3,7 +3,9 @@ This is a slightly modified version of the forced UnityRenderStreaming repositor
 
 **How to deploy**
 Make sure you have the docker engine installed, preferably with docker desktop. Run a CMD from the project root directory, and run the following command to create a docker image:
+
 _docker build -f Dockerfile.dev -t your-image-name ._
+
 Docker should recognize the image, and you can run a container from port 80. The webserver should now be running at 127.0.0.1:80
 
 
